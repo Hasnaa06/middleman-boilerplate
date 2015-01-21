@@ -1,20 +1,19 @@
 #footer {
-  background: $gray-darker;
+  background: #EEEEEE;
+  font-size: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: $yellow;
   padding: 30px 0;
-  color: $gray-lighter;
-  p {
-    margin-top: 17px;
-  }
-  ul {
-    margin-top: 10px;
-  }
   a {
-    color: $gray-lighter;
+    color: $yellow;
     font-size: 30px;
-    letter-spacing: 20px;
-    transition: color 0.5s ease;
-    &:hover{
-      color: $yellow;
-    }
+    &:hover {
+    color: $orange;
+    }   
+  }
+  p{
+    color: $yellow;
   }
 }
+

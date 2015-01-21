@@ -3,18 +3,26 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-$open-sans: "Open Sans", "Helvetica", "sans-serif";
-$montserrat: "Montserrat", "sans-serif";
+$base-font: "Brandon", "Helvetica", "sans-serif";
+$header-font: "Brandon", "sans-serif";
 
-// Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
+	@font-face {
+   font-family: "Brandon";
+   src: font-url('brandon-grotesque-regular.eot'),
+        font-url('brandon-grotesque-regular.woff') format('woff'),
+        font-url('brandon-grotesque-regular.ttf') format('truetype');
+ }
 // $my-font: "Font Name";
+
+	@font-face {
+   font-family: "Brandon";
+	font-weight: light;
+	src: font-url('brandon-grotesque-light.eot'),
+	     font-url('brandon-grotesque-light.woff') format('woff'),
+         font-url('brandon-grotesque-light.ttf') format('truetype');
+ }
+// $my-font: "Font Name";
+
 
 // Font-size and line-height
 $base-size: 16px;
@@ -25,8 +33,8 @@ $base-height: 1.4;
  * ------------------------------------- */
 // Scheme
 $red: #EE5F5B;
-$blue: #469AE0;
-$yellow: #FDB631;
+$blue: #DCC78E;
+$yellow: #CC9900;
 $orange: #E67E22;
 $green: #32B796;
 $purple: #6452BD;

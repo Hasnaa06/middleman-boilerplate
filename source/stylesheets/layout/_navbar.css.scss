@@ -1,9 +1,9 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: white;
+$navbar-color: $yellow;
 $navbar-hover-color: $yellow;
-$navbar-font-family: $montserrat;
+$navbar-font-family: $header-font;
 $navbar-bg: transparent;
 
 /* -------------------------------------
@@ -12,23 +12,23 @@ $navbar-bg: transparent;
 $navbar-height: 50px;
 $navbar-vertical-padding: 5px;
 $navbar-horizontal-padding: 20px;
-$navbar-border-bottom-width: 0;
-$navbar-border-bottom-color: grey;
+$navbar-border-bottom-width: 2px;
+$navbar-border-bottom-color: $yellow;
 
 /* -------------------------------------
  * Navbar button
  * ------------------------------------- */
 $navbar-btn-height: 40px;
-$navbar-btn-bg: lightgrey;
+$navbar-btn-bg: $blue;
 $navbar-btn-color: white;
 $navbar-btn-horizontal-padding: 10px;
-$navbar-btn-radius: 2px;
+$navbar-btn-radius: 5px;
 
 /* -------------------------------------
  * Navbar profile picture
  * ------------------------------------- */
 $navbar-profile-radius: 50%;
-$navbar-profile-border-color: white;
+$navbar-profile-border-color: $yellow;
 $navbar-profile-border-width: 2px;
 
 /* -------------------------------------
@@ -80,11 +80,10 @@ $navbar-profile-border-width: 2px;
     color: $navbar-btn-color;
     border-radius: $navbar-btn-radius;
     margin-top: ($navbar-height + 2 * $navbar-vertical-padding - $navbar-btn-height) / 2;
-    font-weight: bold;
     background-color: $navbar-btn-bg;
     font-size: 12px;
     &:hover{
-      background-color: darken($navbar-btn-bg, 30%);
+      background-color: darken($navbar-btn-bg, 20%);
     }
   }
 

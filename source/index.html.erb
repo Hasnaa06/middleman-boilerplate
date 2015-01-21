@@ -1,10 +1,68 @@
 ---
-title: Welcome to Middleman
+title: Welcome to My Souk in the City
 ---
+  
+    <div id="banner" class="padded">
+      <h1>Get ready !! </h1>
+      <p>Our new website is coming soon</p>
+      <p>Subscribe to our newsletter to receive website updates</p>
+        <a class='btn btn-primary' href="#"> Subscribe </a>
+    </div>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <div class= "bg-primary padded text-center icon"> 
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3" >
+            	<%= image_tag "bow.svg" %>
+                <h2> Fashion </h2>
+                <p> Discover our talented fashion designers from MENA region</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3" >
+            	<%= image_tag "camel.svg" %>
+                <h2> Lifestyle </h2>
+                <p> Shine up your lifestyle with our oriental products </p>
+            </div>
+           <div class="col-xs-12 col-sm-6 col-md-3" >
+           		<%= image_tag "mymagazine.svg" %>
+              	<h2> Magazine </h2>
+              	<p> Stay tuned and receive our latest fashion updates </p>
+           </div>
+           <div class="col-xs-12 col-sm-6 col-md-3" >
+           		<%= image_tag "shopping.svg" %>
+              	<h2> Shopping Cart </h2>
+              	<p> Have a look at your network's preferred products</p>
+           </div>
+          </div>
+      </div>  
+    </div>
+    
+    <div class="text-center padded" id="form">
+      <h2> Get updates from My Souk in the City </h2>
+      <p> Leave us your email address and get the latest news </p>
+      <form class="form-inline"> 
+        <input type="email" class="form-control" placeholder="name@email.com">
+        <a class="btn btn-primary" href="#">Subscribe</a>
+      </form>
+    </div>  
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+      var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+      var myOptions = {
+        zoom: 16,
+        center: myLatlng,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+      };
+      var map = new google.maps.Map(document.getElementById('map'), myOptions);
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title:"You are here!"
+      });
+      </script>
+    

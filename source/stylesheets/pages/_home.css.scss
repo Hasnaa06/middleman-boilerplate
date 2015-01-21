@@ -1,0 +1,35 @@
+
+#banner {
+	background-image: image-url('harakat.jpg');
+	height: 600px;
+	padding-top: 200px;
+	color: white;
+	padding-left: 20px;
+	h1{
+		font-size: 50px;
+		text-shadow: 1px 1px 2px rgb(100, 100, 100);
+	}
+	p{
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+
+
+.icon {
+	color: $gray-light;
+	p{
+		font-size: 18px;
+		font-weight: 300;
+		text-align: center;
+	}
+	img{
+		width: 50px;
+	}
+	h2{
+		font-size: 25px;
+	}
+}
+
+
+	
