@@ -33,8 +33,34 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-<a href="contact.html">                <i class="fa fa-envelope-o"></i> Contact
+<a href="designers">              <i class="fa fa-group"></i> Our designers
 </a>            </li>
+            <li>
+<a href="contact">                <i class="fa fa-envelope-o"></i> Contact
+</a>            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+               Menu <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">
+                   Fashion
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   Lifestyle
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                  Magazine
+                  </a>
+                </li>
+              </ul>
+            </li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                 <i class="fa fa-heart"></i>
@@ -53,58 +79,82 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="#" class="btn">Subscribe</a>
-            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
         <div id="banner" class="padded">
-      <h1>Get ready !! </h1>
-      <p>Our new website is coming soon</p>
-      <p>Subscribe to our newsletter to receive website updates</p>
-        <a class='btn btn-primary' href="#"> Subscribe </a>
+      <div class="fadeInHome">
+        <h1>
+          Get ready !! 
+        </h1>
+        <p>
+          Our new website is coming soon
+        </p>
+        <p>
+          Subscribe to our newsletter to receive website updates
+        </p>
+        <a class='btn btn-primary' href="#"> 
+          Subscribe 
+        </a>
+      </div>
+        <a href="#features">
+          <i class="fa fa-angle-down pulse"></i>
+        </a>
     </div>
 
-    <div class= "bg-primary padded text-center icon"> 
+    <div id='features' class="bg-primary padded text-center icon"> 
       <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3" >
-            	<img src="images/bow.svg" />
-                <h2> Fashion </h2>
-                <p> Discover our talented fashion designers from MENA region</p>
+              <a href="#">
+                <img src="images/bow.svg" />
+              </a>
+              <h2> Fashion </h2>
+              <p> Discover our talented fashion designers from MENA region</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3" >
-            	<img src="images/camel.svg" />
-                <h2> Lifestyle </h2>
-                <p> Shine up your lifestyle with our oriental products </p>
+              <a href="#">
+                <img src="images/camel.svg" />
+              </a>
+              <h2> Lifestyle </h2>
+              <p> Shine up your lifestyle with our oriental products </p>
             </div>
            <div class="col-xs-12 col-sm-6 col-md-3" >
-           		<img src="images/mymagazine.svg" />
-              	<h2> Magazine </h2>
-              	<p> Stay tuned and receive our latest fashion updates </p>
+            <a href="#">
+              <img src="images/mymagazine.svg" />
+            </a>
+            <h2> Magazine </h2>
+            <p> Stay tuned and receive our latest fashion updates </p>
            </div>
            <div class="col-xs-12 col-sm-6 col-md-3" >
-           		<img src="images/shopping.svg" />
-              	<h2> Shopping Cart </h2>
-              	<p> Have a look at your network's preferred products</p>
+            <a href="#">
+              <img src="images/shopping.svg" />
+            </a>
+            <h2> Shopping Cart </h2>
+            <p> Have a look at your network's preferred products</p>
            </div>
           </div>
       </div>  
+      <a href="#newsletter">
+        <i class="fa fa-angle-down pulse"></i>
+      </a>
     </div>
     
-    <div class="text-center padded" id="form">
+    <div id="newsletter" class="text-center padded" id="form">
       <h2> Get updates from My Souk in the City </h2>
       <p> Leave us your email address and get the latest news </p>
       <form class="form-inline"> 
         <input type="email" class="form-control" placeholder="name@email.com">
-        <a class="btn btn-primary" href="#">Subscribe</a>
+        <a class="btn btn-primary" href="#"> Go!</a>
       </form>
+    <a href="#map">
+      <i class="fa fa-angle-down pulse"></i>
+    </a>
     </div>  
 
-    <div id="map" style="width: 100%; height: 400px;"></div>
+    <div id="map" style="width: 100%; height: 400px;">
 
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -124,31 +174,32 @@
         title:"You are here!"
       });
       </script>
+    </div>
     
 
 
     <div id="footer" class="padded">
       <ul class="list-inline">
         <li>
-          <a href="#"> 
+          <a href="http://www.facebook.com"> 
             <i class="fa fa-facebook">
             </i>
           </a>
         </li>
         <li>
-          <a href="#"> 
+          <a href="http://www.instagram.com"> 
             <i class="fa fa-instagram">
             </i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="http://www.twitter.com">
             <i class="fa fa-twitter">
             </i>
           </a>
         </li>
         <li>
-          <a href="#"> 
+          <a href="http://www.youtube.com"> 
             <i class="fa fa-youtube">
             </i>
           </a>
@@ -158,6 +209,5 @@
         For further information, feel free to contact us: contact@mysoukinthecity.com 
       </p>
     </div>
-
   </body>
 </html>
